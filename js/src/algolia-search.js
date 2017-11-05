@@ -39,7 +39,7 @@ $(document).ready(function () {
         item: function (data) {
           var link = data.permalink ? data.permalink : (CONFIG.root + data.path);
           return (
-            '<a target="_blank" href="' + link + '" class="algolia-hit-item-link">' +
+            '<a href="' + link + '" class="algolia-hit-item-link">' +
               data._highlightResult.title.value +
             '</a>'
           );
