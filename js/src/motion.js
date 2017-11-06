@@ -88,7 +88,7 @@ $(document).ready(function () {
     isSidebarVisible: false,
     init: function () {
       this.toggleEl.on('click', this.clickHandler.bind(this));
-      this.toggleEl.trigger('click');
+      // this.toggleEl.trigger('click');
       this.dimmerEl.on('click', this.clickHandler.bind(this));
       this.toggleEl.on('mouseenter', this.mouseEnterHandler.bind(this));
       this.toggleEl.on('mouseleave', this.mouseLeaveHandler.bind(this));
