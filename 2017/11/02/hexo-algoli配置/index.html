@@ -69,22 +69,22 @@
 
 
 
-<meta name="description" content="使用hexo搭建博客的确十分方便快捷，而且网上教程很多，按照教程一步步来即可轻松完成博客搭建。 在搭建博客的过程中还是碰到了一些小问题，其中有一个就是hexo-algolia环境变量配置问题。 按照网上教程，现在algolia官网注册好账号，新建好index，得到 ID ，API key等，配置好根目录文件_config.yml里的algolia项，在git bash中执行hexo algolia">
+<meta name="description" content="使用hexo搭建博客的确十分方便快捷，而且网上教程很多，按照教程一步步来即可轻松完成博客搭建。 在搭建博客的过程中还是碰到了一些小问题，其中有一个就是hexo-algolia环境变量配置问题。 按照网上教程，现在algolia官网注册好账号，新建index，得到 ID ，API key等，配置好根目录文件_config.yml里的algolia项，在git bash中执行hexo algolia,">
 <meta name="keywords" content="hexo-algolia">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo-algolia的environment variable配置">
 <meta property="og:url" content="https://yxc666.github.io/2017/11/02/hexo-algoli配置/index.html">
 <meta property="og:site_name" content="YXC‘S Notes">
-<meta property="og:description" content="使用hexo搭建博客的确十分方便快捷，而且网上教程很多，按照教程一步步来即可轻松完成博客搭建。 在搭建博客的过程中还是碰到了一些小问题，其中有一个就是hexo-algolia环境变量配置问题。 按照网上教程，现在algolia官网注册好账号，新建好index，得到 ID ，API key等，配置好根目录文件_config.yml里的algolia项，在git bash中执行hexo algolia">
+<meta property="og:description" content="使用hexo搭建博客的确十分方便快捷，而且网上教程很多，按照教程一步步来即可轻松完成博客搭建。 在搭建博客的过程中还是碰到了一些小问题，其中有一个就是hexo-algolia环境变量配置问题。 按照网上教程，现在algolia官网注册好账号，新建index，得到 ID ，API key等，配置好根目录文件_config.yml里的algolia项，在git bash中执行hexo algolia,">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://yxc666.github.io/2017/11/02/hexo-algoli配置/images/hexo-algolia/hexo-algolia-err.png">
 <meta property="og:image" content="https://yxc666.github.io/2017/11/02/hexo-algoli配置/images/hexo-algolia/all-api-keys.png">
 <meta property="og:image" content="https://yxc666.github.io/2017/11/02/hexo-algoli配置/images/hexo-algolia/edit-api-keys.png">
 <meta property="og:image" content="https://yxc666.github.io/2017/11/02/hexo-algoli配置/images/hexo-algolia/success.png">
-<meta property="og:updated_time" content="2017-11-06T07:43:20.000Z">
+<meta property="og:updated_time" content="2017-11-06T07:50:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo-algolia的environment variable配置">
-<meta name="twitter:description" content="使用hexo搭建博客的确十分方便快捷，而且网上教程很多，按照教程一步步来即可轻松完成博客搭建。 在搭建博客的过程中还是碰到了一些小问题，其中有一个就是hexo-algolia环境变量配置问题。 按照网上教程，现在algolia官网注册好账号，新建好index，得到 ID ，API key等，配置好根目录文件_config.yml里的algolia项，在git bash中执行hexo algolia">
+<meta name="twitter:description" content="使用hexo搭建博客的确十分方便快捷，而且网上教程很多，按照教程一步步来即可轻松完成博客搭建。 在搭建博客的过程中还是碰到了一些小问题，其中有一个就是hexo-algolia环境变量配置问题。 按照网上教程，现在algolia官网注册好账号，新建index，得到 ID ，API key等，配置好根目录文件_config.yml里的algolia项，在git bash中执行hexo algolia,">
 <meta name="twitter:image" content="https://yxc666.github.io/2017/11/02/hexo-algoli配置/images/hexo-algolia/hexo-algolia-err.png">
 
 
@@ -331,7 +331,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-11-06T15:43:20+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-11-06T15:50:52+08:00">
                 2017-11-06
               </time>
             
@@ -394,7 +394,7 @@
       
         <p>使用hexo搭建博客的确十分方便快捷，而且网上教程很多，按照教程一步步来即可轻松完成博客搭建。</p>
 <p>在搭建博客的过程中还是碰到了一些小问题，其中有一个就是hexo-algolia环境变量配置问题。</p>
-<p>按照网上教程，现在algolia官网注册好账号，新建好index，得到 <font color="#4169E1">ID ，API key</font>等，配置好根目录文件<i class="icon-file"></i><strong>_config.yml</strong>里的algolia项，在git bash中执行hexo algolia,报错:<br><img src="images/hexo-algolia/hexo-algolia-err.png" alt="hexo-algolia-err"><br>查阅hexo-algolia官方文档后发现，这是因为新版hexo-algolia(版本^1.2.3)需要用户提供一个单独的(separate) <em>API key</em>来设置environment variable，具体步骤如下:</p>
+<p>按照网上教程，现在algolia官网注册好账号，新建index，得到 <font color="#4169E1">ID ，API key</font>等，配置好根目录文件<i class="icon-file"></i><strong>_config.yml</strong>里的algolia项，在git bash中执行hexo algolia,报错:<br><img src="images/hexo-algolia/hexo-algolia-err.png" alt="hexo-algolia-err"><br>查阅hexo-algolia官方文档后发现，这是因为新版hexo-algolia(版本^1.2.3)需要用户提供一个单独的(separate) <em>API key</em>来设置environment variable，具体步骤如下:</p>
 <h6 id="1-在algolia主面板中，新建一个-API-key-步骤如下"><a href="#1-在algolia主面板中，新建一个-API-key-步骤如下" class="headerlink" title="1. 在algolia主面板中，新建一个 API key ,步骤如下:"></a>1. 在algolia主面板中，新建一个 <em>API key</em> ,步骤如下:</h6><p><img src="images/hexo-algolia/all-api-keys.png" alt="all-api-keys"></p>
 <h6 id="2-设置api-key的权限，如下图"><a href="#2-设置api-key的权限，如下图" class="headerlink" title="2. 设置api key的权限，如下图:"></a>2. 设置api key的权限，如下图:</h6><p><img src="images/hexo-algolia/edit-api-keys.png" alt="edit-api-keys"></p>
 <h6 id="3-在git-bash中设置-HEXO-ALGOLIA-INDEXING-KEY"><a href="#3-在git-bash中设置-HEXO-ALGOLIA-INDEXING-KEY" class="headerlink" title="3. 在git bash中设置 HEXO_ALGOLIA_INDEXING_KEY:"></a>3. 在git bash中设置 <em>HEXO_ALGOLIA_INDEXING_KEY</em>:</h6><p><code>$ export HEXO_ALGOLIA_INDEXING_KEY=&#39;你刚新建的api key&#39;</code><br><code>$ hexo algolia</code><br>得到如下结果:<br><img src="images/hexo-algolia/success.png" alt="success"><br>即配置成功。<br>以上。 </p>
