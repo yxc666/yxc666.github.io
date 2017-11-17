@@ -53,7 +53,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo-algolia," />
+  <meta name="keywords" content="ie8,兼容性," />
 
 
 
@@ -69,23 +69,18 @@
 
 
 
-<meta name="description" content="使用hexo搭建博客的确十分方便快捷，而且网上教程很多，按照教程一步步来即可轻松完成博客搭建。 在搭建博客的过程中还是碰到了一些小问题，其中有一个就是hexo-algolia环境变量配置问题。 按照网上教程，现在algolia官网注册好账号，新建index，得到 ID ，API key等，配置好根目录文件 _config.yml里的algolia项，在git bash中执行hexo algolia">
-<meta name="keywords" content="hexo-algolia">
+<meta name="description" content="近期公司项目要求兼容ie8,于是我们各种填坑，在此记录我们遇到的问题和解决办法，以作总结。 1.CSS3 Media Queryie8无法识别Media Query, 所以可以hack一下，引入Respond.js解决此问题。 123&amp;lt;!--[if lt IE 9]&amp;gt;    &amp;lt;script src=&amp;quot;http://cdn.bootcss.com/respond.js/1">
+<meta name="keywords" content="ie8,兼容性">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo-algolia的environment variable配置">
-<meta property="og:url" content="https://yxc666.github.io/2017/11/06/hexo-algolia/index.html">
+<meta property="og:title" content="ie8兼容性问题防坑指南">
+<meta property="og:url" content="https://yxc666.github.io/2017/11/17/ie8-compatibility/index.html">
 <meta property="og:site_name" content="YXC&#39;S Notes">
-<meta property="og:description" content="使用hexo搭建博客的确十分方便快捷，而且网上教程很多，按照教程一步步来即可轻松完成博客搭建。 在搭建博客的过程中还是碰到了一些小问题，其中有一个就是hexo-algolia环境变量配置问题。 按照网上教程，现在algolia官网注册好账号，新建index，得到 ID ，API key等，配置好根目录文件 _config.yml里的algolia项，在git bash中执行hexo algolia">
+<meta property="og:description" content="近期公司项目要求兼容ie8,于是我们各种填坑，在此记录我们遇到的问题和解决办法，以作总结。 1.CSS3 Media Queryie8无法识别Media Query, 所以可以hack一下，引入Respond.js解决此问题。 123&amp;lt;!--[if lt IE 9]&amp;gt;    &amp;lt;script src=&amp;quot;http://cdn.bootcss.com/respond.js/1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://yxc666.github.io/2017/11/06/hexo-algolia/hexo-algolia-err.png">
-<meta property="og:image" content="https://yxc666.github.io/2017/11/06/hexo-algolia/all-api-keys.png">
-<meta property="og:image" content="https://yxc666.github.io/2017/11/06/hexo-algolia/edit-api-key.png">
-<meta property="og:image" content="https://yxc666.github.io/2017/11/06/hexo-algolia/success.png">
-<meta property="og:updated_time" content="2017-11-06T08:24:46.000Z">
+<meta property="og:updated_time" content="2017-11-17T06:59:48.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo-algolia的environment variable配置">
-<meta name="twitter:description" content="使用hexo搭建博客的确十分方便快捷，而且网上教程很多，按照教程一步步来即可轻松完成博客搭建。 在搭建博客的过程中还是碰到了一些小问题，其中有一个就是hexo-algolia环境变量配置问题。 按照网上教程，现在algolia官网注册好账号，新建index，得到 ID ，API key等，配置好根目录文件 _config.yml里的algolia项，在git bash中执行hexo algolia">
-<meta name="twitter:image" content="https://yxc666.github.io/2017/11/06/hexo-algolia/hexo-algolia-err.png">
+<meta name="twitter:title" content="ie8兼容性问题防坑指南">
+<meta name="twitter:description" content="近期公司项目要求兼容ie8,于是我们各种填坑，在此记录我们遇到的问题和解决办法，以作总结。 1.CSS3 Media Queryie8无法识别Media Query, 所以可以hack一下，引入Respond.js解决此问题。 123&amp;lt;!--[if lt IE 9]&amp;gt;    &amp;lt;script src=&amp;quot;http://cdn.bootcss.com/respond.js/1">
 
 
 
@@ -115,13 +110,13 @@
 
 
 
-  <link rel="canonical" href="https://yxc666.github.io/2017/11/06/hexo-algolia/"/>
+  <link rel="canonical" href="https://yxc666.github.io/2017/11/17/ie8-compatibility/"/>
 
 
 
 
 
-  <title>hexo-algolia的environment variable配置 | YXC'S Notes</title>
+  <title>ie8兼容性问题防坑指南 | YXC'S Notes</title>
   
 
 
@@ -286,7 +281,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yxc666.github.io/2017/11/06/hexo-algolia/">
+    <link itemprop="mainEntityOfPage" href="https://yxc666.github.io/2017/11/17/ie8-compatibility/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="YXC">
@@ -303,7 +298,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">hexo-algolia的environment variable配置</h2>
+          <h2 class="post-title" itemprop="name headline">ie8兼容性问题防坑指南</h2>
         
 
         <div class="post-meta">
@@ -315,8 +310,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-06T13:47:00+08:00">
-                2017-11-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-17T09:33:48+08:00">
+                2017-11-17
               </time>
             
 
@@ -331,8 +326,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-11-06T16:24:46+08:00">
-                2017-11-06
+              <time title="更新于" itemprop="dateModified" datetime="2017-11-17T14:59:48+08:00">
+                2017-11-17
               </time>
             
           </span>
@@ -350,8 +345,19 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo-algolia/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo-algolia</span>
+                  <a href="/categories/ie浏览器/" itemprop="url" rel="index">
+                    <span itemprop="name">ie浏览器</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ie浏览器/兼容性问题/" itemprop="url" rel="index">
+                    <span itemprop="name">兼容性问题</span>
                   </a>
                 </span>
 
@@ -392,12 +398,32 @@
       
 
       
-        <p>使用hexo搭建博客的确十分方便快捷，而且网上教程很多，按照教程一步步来即可轻松完成博客搭建。</p>
-<p>在搭建博客的过程中还是碰到了一些小问题，其中有一个就是hexo-algolia环境变量配置问题。</p>
-<p>按照网上教程，现在algolia官网注册好账号，新建index，得到 <font color="#4169E1">ID ，API key</font>等，配置好根目录文件<i class="icon-file"></i> <strong>_config.yml</strong>里的algolia项，在git bash中执行hexo algolia,报错:<br><img src="/2017/11/06/hexo-algolia/hexo-algolia-err.png" alt="hexo-algolia-err"><br>查阅hexo-algolia官方文档后发现，这是因为新版hexo-algolia(版本^1.2.3)需要用户提供一个单独的(separate) <em>API key</em>来设置environment variable，具体步骤如下:</p>
-<h6 id="1-在algolia主面板中，新建一个-API-key-步骤如下"><a href="#1-在algolia主面板中，新建一个-API-key-步骤如下" class="headerlink" title="1. 在algolia主面板中，新建一个 API key ,步骤如下:"></a>1. 在algolia主面板中，新建一个 <em>API key</em> ,步骤如下:</h6><p><img src="/2017/11/06/hexo-algolia/all-api-keys.png" alt="all-api-keys"></p>
-<h6 id="2-设置api-key的权限，如下图"><a href="#2-设置api-key的权限，如下图" class="headerlink" title="2. 设置api key的权限，如下图:"></a>2. 设置api key的权限，如下图:</h6><p><img src="/2017/11/06/hexo-algolia/edit-api-key.png" alt="edit-api-keys"></p>
-<h6 id="3-在git-bash中设置-HEXO-ALGOLIA-INDEXING-KEY"><a href="#3-在git-bash中设置-HEXO-ALGOLIA-INDEXING-KEY" class="headerlink" title="3. 在git bash中设置 HEXO_ALGOLIA_INDEXING_KEY:"></a>3. 在git bash中设置 <em>HEXO_ALGOLIA_INDEXING_KEY</em>:</h6><p><code>$ export HEXO_ALGOLIA_INDEXING_KEY=&#39;你刚新建的api key&#39;</code><br><code>$ hexo algolia</code><br>得到如下结果:<br><img src="/2017/11/06/hexo-algolia/success.png" alt="success"><br>即配置成功。<br>以上。</p>
+        <p>近期公司项目要求兼容ie8,于是我们各种填坑，在此记录我们遇到的问题和解决办法，以作总结。</p>
+<h3 id="1-CSS3-Media-Query"><a href="#1-CSS3-Media-Query" class="headerlink" title="1.CSS3 Media Query"></a>1.CSS3 Media Query</h3><pre><code>ie8无法识别Media Query, 所以可以hack一下，引入Respond.js解决此问题。
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;!--[if lt IE 9]&gt;</div><div class="line">    &lt;script src=&quot;http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;![endif]—&gt;</div></pre></td></tr></table></figure>
+<h3 id="2-nth-child"><a href="#2-nth-child" class="headerlink" title="2.nth-child"></a>2.nth-child</h3><pre><code>first-child是css2的内容，但nth-child和lastchild不是，所以ie8不兼容，我们可以给元素设置不同的class，还可以使用+来代替nth-child。
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ul li+li+li&#123;</div><div class="line">   color:#fff;</div><div class="line">&#125;/*选取第三个li*/</div></pre></td></tr></table></figure>
+<h3 id="3-ie8-amp-7-amp-6下使用css3属性"><a href="#3-ie8-amp-7-amp-6下使用css3属性" class="headerlink" title="3.ie8&amp;7&amp;6下使用css3属性"></a>3.ie8&amp;7&amp;6下使用css3属性</h3><p>使用PIE.htc！首先，介绍一下PIE.htc文件，它是用于控制浏览器行为，.htc文件目前只有ie浏览器支持，它可以让ie支持以下属性</p>
+<ol>
+<li style="list-style: none"><input type="checkbox" checked> border-radius</li>
+<li style="list-style: none"><input type="checkbox" checked> box-shadow</li>
+<li style="list-style: none"><input type="checkbox" checked> Gradients</li>
+<li style="list-style: none"><input type="checkbox" checked> RGBA</li>
+<li style="list-style: none"><input type="checkbox" checked> background-size</li>
+</ol>
+<p>用法如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">.borderRadius&#123;</div><div class="line">    border-radius: 5px;</div><div class="line">    behavior: url(css/PIE.htc);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>注: 1. 一定要有定位属性：position:relative;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. z-index要设置的比较大，因为在IE浏览器下这些CSS3效果的实现是要借助于VML，由VML绘制圆角或是投影效果，所以还需要一个z-index属性。</p>
+<h4 id="1-border-radius圆角"><a href="#1-border-radius圆角" class="headerlink" title="1.border-radius圆角"></a>1.border-radius圆角</h4><p>它不支持单边圆角属性，如：border-top-left-radius,但是可以这样写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">.borderRadius&#123;</div><div class="line">    border-radius: 0px 10px 0px 10px;</div><div class="line">    behavior: url(css/PIE.htc);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="2-box-shadow盒阴影"><a href="#2-box-shadow盒阴影" class="headerlink" title="2.box-shadow盒阴影"></a>2.box-shadow盒阴影</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">.boxShadow&#123;</div><div class="line">    box-shadow: 0px 0px 10px #aaa;</div><div class="line">    behavior: url(css/PIE.htc);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="3-gradient颜色渐变"><a href="#3-gradient颜色渐变" class="headerlink" title="3.gradient颜色渐变"></a>3.gradient颜色渐变</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">.gradient&#123;</div><div class="line">    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff) to(#000)); /*old webkit*/</div><div class="line">     background:-webkit-linear-gradient(#fff, #000); /*new webkit*/</div><div class="line">     background:-moz-linear-gradient(#fff, #000); /*gecko*/</div><div class="line">    background:-ms-linear-gradient(#fff, #000); /*IE10*/</div><div class="line">    background:-o-linear-gradient(#fff, #000); /*opera 11.10+*/</div><div class="line">    background:linear-gradient(#fff,#000); /*future CSS3 browsers*/</div><div class="line">    -pie-background:linear-gradient(#fff, #000); /*PIE*/</div><div class="line">    behavior: url(css/PIE.htc);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="4-RGBA"><a href="#4-RGBA" class="headerlink" title="4.RGBA"></a>4.RGBA</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">.rgba&#123;</div><div class="line">         background: rgba(0,0,0,.3);</div><div class="line">         behavior: url(css/PIE.htc);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>注：<strong>ie8</strong>下还可以用filter的方式实现rgba效果:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);    /*IE8支持*/</div></pre></td></tr></table></figure></p>
+<p>其中#7f000000后六位代表颜色，前两位代表透明度，对照表如下：<br>| rgba透明度值        | 价格   |<br>| :——–:   | :—–:  |<br>| 0.1     | 19 |<br>| 0.2        |   33   |<br>| 0.3        |    4c    |<br>| 0.4     | 66 |<br>| 0.5        |   7f   |<br>| 0.6        |    99    |<br>| 0.7     | b2 |<br>| 0.8        |   c8   |<br>| 0.9        |    e5    |</p>
+<h3 id="4-background-size背景尺寸"><a href="#4-background-size背景尺寸" class="headerlink" title="4.background-size背景尺寸"></a>4.background-size背景尺寸</h3><p>方法一：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.container &#123;</div><div class="line">            height: 200px;</div><div class="line">            width: 100%;</div><div class="line">            background:url(all-api-keys.png) no-repeat;</div><div class="line">            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(</div><div class="line">                    src=&apos;logo.png&apos;,</div><div class="line">                    sizingMethod=&apos;scale&apos;);</div><div class="line">        &#125;</div></pre></td></tr></table></figure></p>
+<p>[1]&nbsp;不能指定任意大小background百分比。<br>[2]&nbsp;用于单张图片不能使用图片精灵等拼图。<br>[3]&nbsp;要引用绝对路径图片。</p>
+<p>方法二：<br>使用<a href="https://github.com/louisremi/background-size-polyfill" target="_blank" rel="external">backgroundsize.min.htc</a>，用法同PIE.htc。<br>[1]可指定百分比。</p>
+<h3 id="5-placeholder"><a href="#5-placeholder" class="headerlink" title="5.placeholder"></a>5.placeholder</h3><p>引用插件，如：<a href="https://github.com/mathiasbynens/jquery-placeholder" target="_blank" rel="external">jquery-placeholder</a>。</p>
+<p><i class="icon-pencil"></i>&nbsp;&nbsp;暂时总结这些，未完待续….</p>
 
       
     </div>
@@ -418,7 +444,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://yxc666.github.io/2017/11/06/hexo-algolia/" title="hexo-algolia的environment variable配置">https://yxc666.github.io/2017/11/06/hexo-algolia/</a>
+    <a href="https://yxc666.github.io/2017/11/17/ie8-compatibility/" title="ie8兼容性问题防坑指南">https://yxc666.github.io/2017/11/17/ie8-compatibility/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -433,7 +459,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo-algolia/" rel="tag"># hexo-algolia</a>
+            <a href="/tags/ie8/" rel="tag"># ie8</a>
+          
+            <a href="/tags/兼容性/" rel="tag"># 兼容性</a>
           
         </div>
       
@@ -446,8 +474,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/11/06/开篇/" rel="next" title="开篇">
-                <i class="fa fa-chevron-left"></i> 开篇
+              <a href="/2017/11/06/hexo-algolia/" rel="next" title="hexo-algolia的environment variable配置">
+                <i class="fa fa-chevron-left"></i> hexo-algolia的environment variable配置
               </a>
             
           </div>
@@ -455,10 +483,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/11/17/ie8-compatibility/" rel="prev" title="ie8兼容性问题防坑指南">
-                ie8兼容性问题防坑指南 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -619,7 +643,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#1-在algolia主面板中，新建一个-API-key-步骤如下"><span class="nav-number">1.</span> <span class="nav-text">1. 在algolia主面板中，新建一个 API key ,步骤如下:</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-设置api-key的权限，如下图"><span class="nav-number">2.</span> <span class="nav-text">2. 设置api key的权限，如下图:</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-在git-bash中设置-HEXO-ALGOLIA-INDEXING-KEY"><span class="nav-number">3.</span> <span class="nav-text">3. 在git bash中设置 HEXO_ALGOLIA_INDEXING_KEY:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-CSS3-Media-Query"><span class="nav-number">1.</span> <span class="nav-text">1.CSS3 Media Query</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-nth-child"><span class="nav-number">2.</span> <span class="nav-text">2.nth-child</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-ie8-amp-7-amp-6下使用css3属性"><span class="nav-number">3.</span> <span class="nav-text">3.ie8&7&6下使用css3属性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-border-radius圆角"><span class="nav-number">3.1.</span> <span class="nav-text">1.border-radius圆角</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-box-shadow盒阴影"><span class="nav-number">3.2.</span> <span class="nav-text">2.box-shadow盒阴影</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-gradient颜色渐变"><span class="nav-number">3.3.</span> <span class="nav-text">3.gradient颜色渐变</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-RGBA"><span class="nav-number">3.4.</span> <span class="nav-text">4.RGBA</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-background-size背景尺寸"><span class="nav-number">4.</span> <span class="nav-text">4.background-size背景尺寸</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-placeholder"><span class="nav-number">5.</span> <span class="nav-text">5.placeholder</span></a></li></ol></div>
             
 
           </div>
