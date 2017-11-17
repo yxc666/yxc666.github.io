@@ -69,18 +69,18 @@
 
 
 
-<meta name="description" content="近期项目客户要求兼容ie8,于是我们开始填坑之路,在此记录我们遇到的问题和解决办法,以作总结。 1.CSS3 Media Queryie8无法识别Media Query,所以可以hack一下,引入Respond.js解决此问题。123&amp;lt;!--[if lt IE 9]&amp;gt;    &amp;lt;script src=&amp;quot;http://cdn.bootcss.com/respond.js/1">
+<meta name="description" content="近期项目客户要求兼容ie8,于是我们开始填坑之路,在此记录我们遇到的问题和解决办法,以作总结。  1.CSS3 Media Queryie8无法识别Media Query,所以可以hack一下,引入Respond.js解决此问题。123&amp;lt;!--[if lt IE 9]&amp;gt;    &amp;lt;script src=&amp;quot;http://cdn.bootcss.com/respond.js/">
 <meta name="keywords" content="ie8,兼容性">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ie8兼容性问题防坑指南">
 <meta property="og:url" content="https://yxc666.github.io/2017/11/17/ie8-compatibility/index.html">
 <meta property="og:site_name" content="YXC&#39;S Notes">
-<meta property="og:description" content="近期项目客户要求兼容ie8,于是我们开始填坑之路,在此记录我们遇到的问题和解决办法,以作总结。 1.CSS3 Media Queryie8无法识别Media Query,所以可以hack一下,引入Respond.js解决此问题。123&amp;lt;!--[if lt IE 9]&amp;gt;    &amp;lt;script src=&amp;quot;http://cdn.bootcss.com/respond.js/1">
+<meta property="og:description" content="近期项目客户要求兼容ie8,于是我们开始填坑之路,在此记录我们遇到的问题和解决办法,以作总结。  1.CSS3 Media Queryie8无法识别Media Query,所以可以hack一下,引入Respond.js解决此问题。123&amp;lt;!--[if lt IE 9]&amp;gt;    &amp;lt;script src=&amp;quot;http://cdn.bootcss.com/respond.js/">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-17T08:21:50.000Z">
+<meta property="og:updated_time" content="2017-11-17T08:28:36.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ie8兼容性问题防坑指南">
-<meta name="twitter:description" content="近期项目客户要求兼容ie8,于是我们开始填坑之路,在此记录我们遇到的问题和解决办法,以作总结。 1.CSS3 Media Queryie8无法识别Media Query,所以可以hack一下,引入Respond.js解决此问题。123&amp;lt;!--[if lt IE 9]&amp;gt;    &amp;lt;script src=&amp;quot;http://cdn.bootcss.com/respond.js/1">
+<meta name="twitter:description" content="近期项目客户要求兼容ie8,于是我们开始填坑之路,在此记录我们遇到的问题和解决办法,以作总结。  1.CSS3 Media Queryie8无法识别Media Query,所以可以hack一下,引入Respond.js解决此问题。123&amp;lt;!--[if lt IE 9]&amp;gt;    &amp;lt;script src=&amp;quot;http://cdn.bootcss.com/respond.js/">
 
 
 
@@ -326,7 +326,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-11-17T16:21:50+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-11-17T16:28:36+08:00">
                 2017-11-17
               </time>
             
@@ -399,9 +399,9 @@
 
       
         <p>近期项目客户要求兼容ie8,于是我们开始填坑之路,在此记录我们遇到的问题和解决办法,以作总结。</p>
+<hr>
 <h2 id="1-CSS3-Media-Query"><a href="#1-CSS3-Media-Query" class="headerlink" title="1.CSS3 Media Query"></a>1.CSS3 Media Query</h2><p>ie8无法识别Media Query,所以可以hack一下,引入Respond.js解决此问题。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;!--[if lt IE 9]&gt;</div><div class="line">    &lt;script src=&quot;http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;![endif]—&gt;</div></pre></td></tr></table></figure></p>
 <h2 id="2-nth-child"><a href="#2-nth-child" class="headerlink" title="2.nth-child"></a>2.nth-child</h2><p>first-child是css2的内容,但nth-child和last-child不是,所以ie8不兼容,我们可以给元素设置不同的class,还可以使用+来代替nth-child。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ul li+li+li&#123;</div><div class="line">   color:#fff;</div><div class="line">&#125;/*选取第三个li*/</div></pre></td></tr></table></figure></p>
-<hr>
 <h2 id="3-ie8-amp-7-amp-6下使用css3属性"><a href="#3-ie8-amp-7-amp-6下使用css3属性" class="headerlink" title="3.ie8&amp;7&amp;6下使用css3属性"></a>3.ie8&amp;7&amp;6下使用css3属性</h2><p>使用PIE.htc！首先,介绍一下PIE.htc文件,它是用于控制浏览器行为,.htc文件目前只有ie浏览器支持,它可以让ie支持以下属性:</p>
 <ul>
 <li style="list-style: none"><input type="checkbox" checked> border-radius</li>
