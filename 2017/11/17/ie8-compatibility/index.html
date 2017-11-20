@@ -77,7 +77,7 @@
 <meta property="og:site_name" content="YXC&#39;S Notes">
 <meta property="og:description" content="近期项目客户要求兼容ie8,于是我们开始填坑之路,在此记录我们遇到的问题和解决办法,以作总结。  CSS3 Media Queryie8无法识别Media Query,所以可以hack一下,引入Respond.js解决此问题。123&amp;lt;!--[if lt IE 9]&amp;gt;    &amp;lt;script src=&amp;quot;http://cdn.bootcss.com/respond.js/1.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-20T00:49:30.000Z">
+<meta property="og:updated_time" content="2017-11-20T07:09:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ie8兼容性问题防坑指南">
 <meta name="twitter:description" content="近期项目客户要求兼容ie8,于是我们开始填坑之路,在此记录我们遇到的问题和解决办法,以作总结。  CSS3 Media Queryie8无法识别Media Query,所以可以hack一下,引入Respond.js解决此问题。123&amp;lt;!--[if lt IE 9]&amp;gt;    &amp;lt;script src=&amp;quot;http://cdn.bootcss.com/respond.js/1.">
@@ -326,7 +326,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-11-20T08:49:30+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-11-20T15:09:16+08:00">
                 2017-11-20
               </time>
             
@@ -409,6 +409,8 @@
 <p>方法二：<br>使用<a href="https://github.com/louisremi/background-size-polyfill" target="_blank" rel="external">backgroundsize.min.htc</a>，用法同PIE.htc。<br>[1]可指定百分比。</p>
 <hr>
 <h2 id="placeholder"><a href="#placeholder" class="headerlink" title="placeholder"></a>placeholder</h2><p>引用插件，如：<a href="https://github.com/mathiasbynens/jquery-placeholder" target="_blank" rel="external">jquery-placeholder</a>。</p>
+<hr>
+<h2 id="url中文传参"><a href="#url中文传参" class="headerlink" title="url中文传参"></a>url中文传参</h2><p>在ie8中，如果url中文传参，如：<a href="http://www.search.html?query=你好，浏览器不能正确解码，需要在传参前对中文参数进行编码。" target="_blank" rel="external">http://www.search.html?query=你好，浏览器不能正确解码，需要在传参前对中文参数进行编码。</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var searchInput = encodeURI(value)</div></pre></td></tr></table></figure></p>
 <hr>
 <h2 id="ie8-amp-7-amp-6下使用css3属性"><a href="#ie8-amp-7-amp-6下使用css3属性" class="headerlink" title="ie8&amp;7&amp;6下使用css3属性"></a>ie8&amp;7&amp;6下使用css3属性</h2><p>使用PIE.htc！首先,介绍一下PIE.htc文件,它是用于控制浏览器行为,.htc文件目前只有ie浏览器支持,它可以让ie支持以下属性:</p>
 <ul>
@@ -692,7 +694,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3-Media-Query"><span class="nav-number">1.</span> <span class="nav-text">CSS3 Media Query</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nth-child"><span class="nav-number">2.</span> <span class="nav-text">nth-child</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background-size背景尺寸"><span class="nav-number">3.</span> <span class="nav-text">background-size背景尺寸</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#placeholder"><span class="nav-number">4.</span> <span class="nav-text">placeholder</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ie8-amp-7-amp-6下使用css3属性"><span class="nav-number">5.</span> <span class="nav-text">ie8&7&6下使用css3属性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#border-radius圆角"><span class="nav-number">5.0.0.1.</span> <span class="nav-text">border-radius圆角</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#box-shadow盒阴影"><span class="nav-number">5.0.0.2.</span> <span class="nav-text">box-shadow盒阴影</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#gradient颜色渐变"><span class="nav-number">5.0.0.3.</span> <span class="nav-text">gradient颜色渐变</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#RGBA"><span class="nav-number">5.0.0.4.</span> <span class="nav-text">RGBA</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3-Media-Query"><span class="nav-number">1.</span> <span class="nav-text">CSS3 Media Query</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nth-child"><span class="nav-number">2.</span> <span class="nav-text">nth-child</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background-size背景尺寸"><span class="nav-number">3.</span> <span class="nav-text">background-size背景尺寸</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#placeholder"><span class="nav-number">4.</span> <span class="nav-text">placeholder</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#url中文传参"><span class="nav-number">5.</span> <span class="nav-text">url中文传参</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ie8-amp-7-amp-6下使用css3属性"><span class="nav-number">6.</span> <span class="nav-text">ie8&7&6下使用css3属性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#border-radius圆角"><span class="nav-number">6.0.0.1.</span> <span class="nav-text">border-radius圆角</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#box-shadow盒阴影"><span class="nav-number">6.0.0.2.</span> <span class="nav-text">box-shadow盒阴影</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#gradient颜色渐变"><span class="nav-number">6.0.0.3.</span> <span class="nav-text">gradient颜色渐变</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#RGBA"><span class="nav-number">6.0.0.4.</span> <span class="nav-text">RGBA</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
