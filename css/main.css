@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bacdab;
+  background: #9d423c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2973,7 +2973,6 @@ hr {
   color: #666;
   background: none;
   border: none;
-  border-bottom: 2px solid #666;
   transition-property: border;
 }
 @media (max-width: 767px) {
@@ -2985,9 +2984,6 @@ hr {
   .post-button a {
     font-size: 16px;
   }
-}
-.post-button a:hover {
-  border-bottom-color: #222;
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
