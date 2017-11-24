@@ -340,7 +340,7 @@ $(document).ready(function () {
   };
 
   $('.tag-cloud a').each(function(){
-    var rn =Math.floor(196 + Math.random()*60);
+    var rn =Math.floor(30 + Math.random()*80);
     var rdcolor = `rgb(${rn},${rn},${rn})`;
     var rdsize =Math.floor(12 + Math.random()*20);
     this.style.fontSize = rdsize+'px';
