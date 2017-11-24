@@ -339,16 +339,4 @@ $(document).ready(function () {
     }
   };
 
-  // 点击标签页，标签字体大小颜色随机改变
-  $(document).on('click','.menu-item-tags',function(){
-    console.log(1)
-    $('.tag-cloud a').each(function(){
-      var rn =Math.floor(Math.random()*180);
-      var rdcolor = `rgb(${rn},${rn},${rn})`;
-      var rdsize =Math.floor(12 + Math.random()*20);
-      this.style.fontSize = rdsize+'px';
-      this.style.color = rdcolor;
-      this.style.borderBottomColor = rdcolor;
-    })
-  })
 });
