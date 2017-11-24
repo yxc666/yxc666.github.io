@@ -340,9 +340,9 @@ $(document).ready(function () {
   };
 
   $('.tag-cloud a').each(function(){
-    var rn =Math.floor(156 + Math.random()*100);
+    var rn =Math.floor(196 + Math.random()*60);
     var rdcolor = `rgb(${rn},${rn},${rn})`;
-    var rdsize =Math.floor(12 + Math.random()*10);
+    var rdsize =Math.floor(12 + Math.random()*20);
     this.style.fontSize = rdsize+'px';
     this.style.color = rdcolor;
   })
