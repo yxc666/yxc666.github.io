@@ -1384,6 +1384,10 @@ pre .javascript .function {
 }
 .posts-collapse .post {
   margin: 30px 0;
+  transition: all linear 0.3s;
+}
+.posts-collapse .post:hover {
+  box-shadow: 0px 0px 5px #aaa;
 }
 .posts-collapse .post-header {
   position: relative;
@@ -1826,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5ded4f;
+  background: #2fdeff;
 }
 .links-of-blogroll {
   font-size: 13px;
