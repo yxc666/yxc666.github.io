@@ -340,7 +340,8 @@ $(document).ready(function () {
   };
 
   // 点击标签页，标签字体大小颜色随机改变
-  $('.menu-item-tags').click(function(){
+  $(document).on('click','.menu-item-tags',function(){
+    console.log(1)
     $('.tag-cloud a').each(function(){
       var rn =Math.floor(Math.random()*180);
       var rdcolor = `rgb(${rn},${rn},${rn})`;
