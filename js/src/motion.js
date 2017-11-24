@@ -341,6 +341,7 @@ $(document).ready(function () {
 
   $('.tag-cloud a').each(function(){
     var fsize = 12 + Math.random()*5;
-    $(this).style.fontSize = fsize+'px';
+    this.style.fontSize = fsize+'px';
+    consolle.log(this)
   })
 });
