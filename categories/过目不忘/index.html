@@ -114,7 +114,7 @@
 
 
 
-  <title>Kategorie: 过目不忘 | YXC'S Notes</title>
+  <title>Category: 过目不忘 | YXC'S Notes</title>
   
 
 
@@ -272,7 +272,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h2>过目不忘<small>Kategorie</small>
+        <h2>过目不忘<small>Category</small>
         </h2>
       </div>
 
@@ -560,6 +560,18 @@
 
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+<script>
+  $(document).ready(function(){
+      $('.tag-cloud-tags a').each(function(){
+          var rn =Math.floor(Math.random()*180);
+          var rdcolor = `rgb(${rn},${rn},${rn})`;
+          var rdsize =Math.floor(12 + Math.random()*20);
+          this.style.fontSize = rdsize+'px';
+          this.style.color = rdcolor;
+          this.style.borderBottomColor = rdcolor;
+        })
+  })
+</script>
 
 
   
