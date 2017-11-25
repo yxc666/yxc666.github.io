@@ -1461,7 +1461,7 @@ pre .javascript .function {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 1px;
   bottom: 0;
   left: 0;
   background-color: #000;
@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffd5ff;
+  background: #c3bea2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3049,12 +3049,16 @@ hr {
     text-align: center;
   }
 }
-.page-home #main .main-inner #content #posts .post {
+.page-home .main-inner .post {
   transition: all linear 0.3s;
   border: 1px solid transparent;
-  padding: 0 10px;
+  padding: 5px 10px;
+  margin-top: 45px;
 }
-.page-home #main .main-inner #content #posts .post:hover {
+.page-home .main-inner .post:first-child {
+  padding-top: 0;
+}
+.page-home .main-inner .post:hover {
   border: 1px solid #ccc;
-  box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 15px #ccc;
 }
