@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2f21af;
+  background: #9832a8;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3048,4 +3048,11 @@ hr {
     width: auto;
     text-align: center;
   }
+}
+.page-home #main .main-inner #content #posts .post {
+  transition: all linear 0.3s;
+}
+.page-home #main .main-inner #content #posts .post:hover {
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #ccc;
 }
