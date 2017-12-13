@@ -69,13 +69,13 @@
 
 
 
-<meta name="description" content="本文的目的就是保证你彻底弄懂javascript的执行机制，如果读完本文还不懂，可以揍我。不论你是Javascript新手还是老鸟，不论是面试求职还是日常开发工作，我们经常会遇到这样的情况：给定的几行代码，我们需要知道其输出内容和顺序。因为javascript是一门单线程语言，所以我们可以得出结论：  javascript是按照语句出现的顺序执行的看到这里读者要打人了：我难道不知道js是一行一行执">
+<meta name="description" content="本文的目的就是保证你彻底弄懂javascript的执行机制，如果读完本文还不懂，可以揍我。 不论你是Javascript新手还是老鸟，不论是面试求职还是日常开发工作，我们经常会遇到这样的情况：给定的几行代码，我们需要知道其输出内容和顺序。因为javascript是一门单线程语言，所以我们可以得出结论：  javascript是按照语句出现的顺序执行的  看到这里读者要打人了：我难道不知道js是一行">
 <meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="这一次，彻底弄懂JavaScript执行机制">
 <meta property="og:url" content="https://yxc666.github.io/2017/12/13/这一次彻底弄懂JavaScript执行机制/index.html">
 <meta property="og:site_name" content="YXC&#39;S Notes">
-<meta property="og:description" content="本文的目的就是保证你彻底弄懂javascript的执行机制，如果读完本文还不懂，可以揍我。不论你是Javascript新手还是老鸟，不论是面试求职还是日常开发工作，我们经常会遇到这样的情况：给定的几行代码，我们需要知道其输出内容和顺序。因为javascript是一门单线程语言，所以我们可以得出结论：  javascript是按照语句出现的顺序执行的看到这里读者要打人了：我难道不知道js是一行一行执">
+<meta property="og:description" content="本文的目的就是保证你彻底弄懂javascript的执行机制，如果读完本文还不懂，可以揍我。 不论你是Javascript新手还是老鸟，不论是面试求职还是日常开发工作，我们经常会遇到这样的情况：给定的几行代码，我们需要知道其输出内容和顺序。因为javascript是一门单线程语言，所以我们可以得出结论：  javascript是按照语句出现的顺序执行的  看到这里读者要打人了：我难道不知道js是一行">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2017/11/20/15fd87f7221d0dbe?imageslim">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2017/11/20/15fd87d38acc4905?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
@@ -83,10 +83,10 @@
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2017/11/21/15fdd88994142347?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2017/11/21/15fdcea13361a1ec?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2017/11/21/15fdd96beade6575?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
-<meta property="og:updated_time" content="2017-12-13T02:41:56.000Z">
+<meta property="og:updated_time" content="2017-12-13T03:02:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="这一次，彻底弄懂JavaScript执行机制">
-<meta name="twitter:description" content="本文的目的就是保证你彻底弄懂javascript的执行机制，如果读完本文还不懂，可以揍我。不论你是Javascript新手还是老鸟，不论是面试求职还是日常开发工作，我们经常会遇到这样的情况：给定的几行代码，我们需要知道其输出内容和顺序。因为javascript是一门单线程语言，所以我们可以得出结论：  javascript是按照语句出现的顺序执行的看到这里读者要打人了：我难道不知道js是一行一行执">
+<meta name="twitter:description" content="本文的目的就是保证你彻底弄懂javascript的执行机制，如果读完本文还不懂，可以揍我。 不论你是Javascript新手还是老鸟，不论是面试求职还是日常开发工作，我们经常会遇到这样的情况：给定的几行代码，我们需要知道其输出内容和顺序。因为javascript是一门单线程语言，所以我们可以得出结论：  javascript是按照语句出现的顺序执行的  看到这里读者要打人了：我难道不知道js是一行">
 <meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2017/11/20/15fd87f7221d0dbe?imageslim">
 
 
@@ -333,7 +333,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-12-13T10:41:56+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-12-13T11:02:38+08:00">
                 2017-12-13
               </time>
             
@@ -394,12 +394,14 @@
       
 
       
-        <p>本文的目的就是保证你彻底弄懂javascript的执行机制，如果读完本文还不懂，可以揍我。<br><br><br>不论你是Javascript新手还是老鸟，不论是面试求职还是日常开发工作，我们经常会遇到这样的情况：给定的几行代码，我们需要知道其输出内容和顺序。因为javascript是一门单线程语言，所以我们可以得出结论：</p>
+        <p>本文的目的就是保证你彻底弄懂javascript的执行机制，如果读完本文还不懂，可以揍我。</p>
+<p>不论你是Javascript新手还是老鸟，不论是面试求职还是日常开发工作，我们经常会遇到这样的情况：给定的几行代码，我们需要知道其输出内容和顺序。因为javascript是一门单线程语言，所以我们可以得出结论：</p>
 <ul>
-<li>javascript是按照语句出现的顺序执行的<br>看到这里读者要打人了：我难道不知道js是一行一行执行的？还用你说？稍安勿躁，正因为js是一行一行执行的，所以我们以为js都是这样的：</li>
+<li>javascript是按照语句出现的顺序执行的</li>
 </ul>
+<p>看到这里读者要打人了：我难道不知道js是一行一行执行的？还用你说？稍安勿躁，正因为js是一行一行执行的，所以我们以为js都是这样的：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">let a = &apos;1&apos;;</div><div class="line">console.log(a);</div><div class="line"></div><div class="line">let b = &apos;2&apos;;</div><div class="line">console.log(b);</div></pre></td></tr></table></figure>
-<div style="align:center"><br><img src="https://user-gold-cdn.xitu.io/2017/11/20/15fd87f7221d0dbe?imageslim" alt="骚年出招吧，哥让你三行代码"><br></div><br>然而实际上js是这样的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">setTimeout(function()&#123;</div><div class="line">    console.log(&apos;定时器开始啦&apos;)</div><div class="line">&#125;);</div><div class="line"></div><div class="line">new Promise(function(resolve)&#123;</div><div class="line">    console.log(&apos;马上执行for循环啦&apos;);</div><div class="line">    for(var i = 0; i &lt; 10000; i++)&#123;</div><div class="line">        i == 99 &amp;&amp; resolve();</div><div class="line">    &#125;</div><div class="line">&#125;).then(function()&#123;</div><div class="line">    console.log(&apos;执行then函数啦&apos;)</div><div class="line">&#125;);</div><div class="line"></div><div class="line">console.log(&apos;代码执行结束&apos;);</div></pre></td></tr></table></figure><br><br><div style="align:center"><br><img src="https://user-gold-cdn.xitu.io/2017/11/20/15fd87d38acc4905?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="前端打字员..."><br></div><br>依照<big><strong>js是按照语句出现的顺序执行</strong></big>这个理念，我自信的写下输出结果：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//&quot;定时器开始啦&quot;</div><div class="line">//&quot;马上执行for循环啦&quot;</div><div class="line">//&quot;执行then函数啦&quot;</div><div class="line">//&quot;代码执行结束&quot;</div></pre></td></tr></table></figure><br><br>去chrome上验证下，结果完全不对，瞬间懵了，说好的一行一行执行的呢？<br><div style="align:center"><br><img src="https://user-gold-cdn.xitu.io/2017/11/20/15fd8840f3c3f109?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="知识盲区..."><br></div>
+<div style="align:center;height:105px;"><br><img src="https://user-gold-cdn.xitu.io/2017/11/20/15fd87f7221d0dbe?imageslim" alt="骚年出招吧，哥让你三行代码"><br></div><br>然而实际上js是这样的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">setTimeout(function()&#123;</div><div class="line">    console.log(&apos;定时器开始啦&apos;)</div><div class="line">&#125;);</div><div class="line"></div><div class="line">new Promise(function(resolve)&#123;</div><div class="line">    console.log(&apos;马上执行for循环啦&apos;);</div><div class="line">    for(var i = 0; i &lt; 10000; i++)&#123;</div><div class="line">        i == 99 &amp;&amp; resolve();</div><div class="line">    &#125;</div><div class="line">&#125;).then(function()&#123;</div><div class="line">    console.log(&apos;执行then函数啦&apos;)</div><div class="line">&#125;);</div><div class="line"></div><div class="line">console.log(&apos;代码执行结束&apos;);</div></pre></td></tr></table></figure><br><br><div style="align:center"><br><img src="https://user-gold-cdn.xitu.io/2017/11/20/15fd87d38acc4905?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="前端打字员..."><br></div><br>依照<big><strong>js是按照语句出现的顺序执行</strong></big>这个理念，我自信的写下输出结果：<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//&quot;定时器开始啦&quot;</div><div class="line">//&quot;马上执行for循环啦&quot;</div><div class="line">//&quot;执行then函数啦&quot;</div><div class="line">//&quot;代码执行结束&quot;</div></pre></td></tr></table></figure><br><br>去chrome上验证下，结果完全不对，瞬间懵了，说好的一行一行执行的呢？<br><div style="align:center"><br><img src="https://user-gold-cdn.xitu.io/2017/11/20/15fd8840f3c3f109?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="知识盲区..."><br></div>
 
 <p>我们真的要彻底弄明白javascript的执行机制了。</p>
 <h3 id="1-关于Javascript"><a href="#1-关于Javascript" class="headerlink" title="1.关于Javascript"></a><strong>1.关于Javascript</strong></h3><p>javascript是一门<big>单线程</big>语言，在最新的HTML5中提出了Web-Worker，但javascript是单线程这一核心仍未改变。所以一切javascript版的”多线程”都是用单线程模拟出来的，一切javascript多线程都是纸老虎！</p>
